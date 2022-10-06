@@ -28,9 +28,9 @@ public class Main {
         truckInfo(truck3);
         truckInfo(truck4);
 
-        Driver<Car> andrei = new Driver<Car>("Andrei", "B", 10);
-        Driver<Bus> valera = new Driver<>("Valera", "D", 7);
-        Driver<Truck> igor = new Driver<>("Igor", "C", 2);
+        Driver andrei = new DriverB("Andrei", "B", 10);
+        Driver valera = new DriverD("Valera", "D", 7);
+        Driver igor = new DriverC("Igor", "C", 2);
 
     }
 
