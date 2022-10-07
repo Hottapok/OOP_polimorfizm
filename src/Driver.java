@@ -1,4 +1,4 @@
-public abstract class Driver<T extends Transport & Competing > {
+public abstract class Driver<T extends Transport & Competing> {
     private T vehicle;
     private String name;
     private String category;
@@ -47,9 +47,16 @@ public abstract class Driver<T extends Transport & Competing > {
         }
     }
 
-    public abstract void starMoving();
+    public void starMoving() {
+        System.out.println("Начинаем движение");
+    }
 
-    public abstract void stop();
+    public void stop(){
+        System.out.println("Оставливаемся");
+    }
 
-    public abstract void refuel();
+    public void refuel(){
+        System.out.println("Заправляемся");
+    }
+
 }
